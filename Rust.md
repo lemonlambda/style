@@ -64,7 +64,8 @@ fn foo (bar : i32, baz : i32, fob : i32)
 fn foo (
     bar : i32, baz : i32, fob : i32,
     cob : i32, bob : i32
-) {
+) 
+{
     // code here
 }
 ```
@@ -80,7 +81,9 @@ fn foo (bar : i32, baz : i32, fob : i32)
 fn foo (
     bar : i32, baz : i32, fob : i32,
     cob : i32, bob : i32
-) -> i32 {
+) 
+-> i32 
+{
     // code here
 }
 ```
