@@ -77,7 +77,7 @@ fn foo (bar : i32, baz : i32, fob : i32)
 }
 ```
 ```rs
-fn foo  (
+fn foo (
     bar : i32, baz : i32, fob : i32,
     cob : i32, bob : i32
 ) -> i32 {
