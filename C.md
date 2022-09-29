@@ -13,7 +13,7 @@ foo ()
     // code here
 }
 ```
-### 3 or less args*
+### 3 or fewer args*
 ```c
 int
 foo (int bar, int baz)
