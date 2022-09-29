@@ -67,11 +67,14 @@ TRY_AGAIN;
     if (1) 
     {
         goto RETURN;
+WHAT:
+        return 1;
     } 
     else 
     {
-        goto TRY_AGAIN;
+        goto WHAT;
     }
+    goto TRY_AGAIN;
 RETURN:
     return 0;
 }
