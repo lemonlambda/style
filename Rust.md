@@ -1,21 +1,29 @@
-# Structs
-Run of the mill structn should be formatted like this
+# Lemon's Rust Style Guide
+
+## Structs
+
+### Structs Without Generics Or Lifetimes
+
 ```rs
-struct Foo 
+struct Foo
 {
     bar : i32
 }
 ```
-Structs with lifetimes and generics should be formatted like this
+
+### Structs With Lifetimes And Generics
+
 ```rs
-struct Foo 
+struct Foo
 <'a, T>
 {
     bar : T,
     baz : &'a u8
 }
 ```
-Visibility modifiers should be placed on the line before the struct like this
+
+### Struct Visibility Modifiers
+
 ```rs
 pub
 struct Foo
@@ -23,7 +31,9 @@ struct Foo
     bar : u8
 }
 ```
-Tuple structs should be formatted as like the following
+
+### Tuple Structs
+
 ```rs
 // No generics/lifetimes
 struct Foo (u8, u8)
@@ -31,11 +41,13 @@ struct Foo (u8, u8)
 struct Foo
 <'a, T>
 (
-    &'a T, 
+    &'a T,
     T
 )
 ```
-Visibility modifiers in a strict should look like this
+
+### Member Visibility Modifiers
+
 ```rs
 struct Foo
 {
@@ -44,32 +56,43 @@ struct Foo
 }
 ```
 
-# Functions
-Functions with no args should look like this
+## Functions
+
+### Functions With No Arguments
 ```rs
-fn foo () 
+fn foo ()
 {
     // code here
 }
 ```
-Function containing 3 or less args should look like this
+
+### Functions With Three\* Or Fewer Arguments
+
 ```rs
 fn foo (bar : i32, baz : i32, fob : i32)
 {
     // code here
 }
 ```
-3 or more args should be formatted as such
+
+### Functions With Three\* Or More Arguments
+
 ```rs
-fn foo (
+fn foo
+(
     bar : i32, baz : i32, fob : i32,
     cob : i32, bob : i32
-) 
+)
 {
     // code here
 }
 ```
-Return types should look like this
+
+*\*Note that if your function takes exactly three arguments, you may do whichever
+of the above you prefer.*
+
+### Return Types
+
 ```rs
 fn foo (bar : i32, baz : i32, fob : i32)
 -> i32
@@ -77,13 +100,14 @@ fn foo (bar : i32, baz : i32, fob : i32)
     // code here
 }
 ```
+
 ```rs
-fn foo 
+fn foo
 (
     bar : i32, baz : i32, fob : i32,
     cob : i32, bob : i32
-) 
--> i32 
+)
+-> i32
 {
     // code here
 }
