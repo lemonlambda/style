@@ -88,7 +88,7 @@ fn foo
 }
 ```
 
-\**Note that if your function takes exactly three arguments, you may do whichever
+*\*Note that if your function takes exactly three arguments, you may do whichever
 of the above you prefer.*
 
 ### Return Types
