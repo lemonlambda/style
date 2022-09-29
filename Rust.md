@@ -66,7 +66,7 @@ fn foo ()
 }
 ```
 
-### Functions With Three Or Fewer Arguments
+### Functions With Three\* Or Fewer Arguments
 
 ```rs
 fn foo (bar : i32, baz : i32, fob : i32)
@@ -75,7 +75,7 @@ fn foo (bar : i32, baz : i32, fob : i32)
 }
 ```
 
-### Functions With Three Or More Arguments
+### Functions With Three\* Or More Arguments
 
 ```rs
 fn foo
@@ -88,7 +88,7 @@ fn foo
 }
 ```
 
-*Note that if your function takes exactly three arguments, you may do whichever
+\**Note that if your function takes exactly three arguments, you may do whichever
 of the above you prefer.*
 
 ### Return Types
