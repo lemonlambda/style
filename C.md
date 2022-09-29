@@ -35,7 +35,7 @@ foo
 ```
 *\*Note that if your function takes exactly three arguments, you may do whichever of the above you prefer.*
 ### Function Calls
-```
+```c
 int
 foo ()
 {
