@@ -1,6 +1,6 @@
-# Structs
+## Structs
 
-## Structs Without Generics Or Lifetimes
+### Structs Without Generics Or Lifetimes
 
 ```rs
 struct Foo
@@ -9,7 +9,7 @@ struct Foo
 }
 ```
 
-## Structs With Lifetimes And Generics
+### Structs With Lifetimes And Generics
 
 ```rs
 struct Foo
@@ -20,7 +20,7 @@ struct Foo
 }
 ```
 
-## Struct Visibility Modifiers
+### Struct Visibility Modifiers
 
 ```rs
 pub
@@ -30,7 +30,7 @@ struct Foo
 }
 ```
 
-## Tuple Structs
+### Tuple Structs
 
 ```rs
 // No generics/lifetimes
@@ -44,7 +44,7 @@ struct Foo
 )
 ```
 
-## Member Visibility Modifiers
+### Member Visibility Modifiers
 
 ```rs
 struct Foo
@@ -54,9 +54,9 @@ struct Foo
 }
 ```
 
-# Functions
+## Functions
 
-## Functions With No Arguments
+### Functions With No Arguments
 ```rs
 fn foo ()
 {
@@ -64,7 +64,7 @@ fn foo ()
 }
 ```
 
-## Functions With Three Or Fewer Arguments
+### Functions With Three Or Fewer Arguments
 
 ```rs
 fn foo (bar : i32, baz : i32, fob : i32)
@@ -73,7 +73,7 @@ fn foo (bar : i32, baz : i32, fob : i32)
 }
 ```
 
-## Functions With Three Or More Arguments
+### Functions With Three Or More Arguments
 
 ```rs
 fn foo
@@ -89,7 +89,7 @@ fn foo
 *Note that if your function takes exactly three arguments, you may do whichever
 of the above you prefer.*
 
-## Return Types
+### Return Types
 
 ```rs
 fn foo (bar : i32, baz : i32, fob : i32)
