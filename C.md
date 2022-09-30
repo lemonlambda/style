@@ -48,15 +48,15 @@ foo();
 ## Casts, Pointers and Const
 
 ### Pointers
-Should **always** be left aligned.
+Should **always** be right aligned.
 ```c
-char* foo = "bar";
-char const* bar = "foo";
+char *foo = "bar";
+char const *bar = "foo";
 ```
 ### Casts
 ```c
-void* foo = (void*) "Hello";
-char const* bar = (void const*) "Bye";
+void *foo = (void *) "Hello";
+char const *bar = (void const *) "Bye";
 ```
 ## Goto labels
 ```c
